@@ -395,54 +395,67 @@
             <form class="form js-speaker-form">
                 <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                 <!-- Контакти -->
-                <div class="contact-form-field form-field">
-                    <label for="name" class="form-label">Имя</label>
-                    <input type="text" class="form-input" name="user-name" id="name" autofocus>
-                </div>
-                <div class="contact-form-field form-field">
-                    <label for="tel" class="form-label">Телефон</label>
-                    <input type="tel" class="form-input" name="user-tel" id="tel">
-                </div>
-                <div class="contact-form-field form-field">
-                    <label for="mail" class="form-label">Почта</label>
-                    <input type="Email" class="form-input" name="user-email" id="mail">
-                </div>
-
-                <!-- Коментар -->
-                <div class="comment-form-field form-field">
-                    <label class="form-label" for="bio">Комментарий</label>
-                    <textarea class="form-input comment-form-input" name="bio" id="bio" cols="30" rows="10" placeholder="Введите текст">
-                        </textarea>
-                </div>
+                <label><span class="form-label">Имя</span>
+                    <div class="input">
+                        <input type="text" class="form-input" name="user-name" autofocus autocomplete="none">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./images/svg/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label><span class="form-label">Телефон</span>
+                    <div class="input">
+                        <input type="tel" class="form-input" name="user-tel">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./images/svg/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label"><span class="form-label">Почта</span>
+                    <div class="input">
+                        <input type="Email" class="form-input" name="user-email">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./images/svg/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                    </label>
             
-                <!-- Чекбокс -->
-                <div class="check-form-field form-field">
-                    <input type="checkbox" id="checkbox" class="checkbox">
-                    <label for="checkbox" class="form-label checkbox-form-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-                </div>
-                <button type="submit" class="modal-submit-button">
-                    Отправить
-                </button>
+                    <!-- Коментар -->
+                    <label><span class="form-label">Комментарий</span>
+                        <textarea class="form-input comment-form-input" name="bio" cols="30" rows="10"
+                            placeholder="Введите текст"></textarea>
+                    </label>
             
-                
+                    <!-- Чекбокс -->
+                    <label class="form-label checkbox-form-label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="check-icon"></span>
+                        Соглашаюсь с рассылкой и принимаю <a class="conditions-link" href="">Условия договора</a>
+                    </label>
+            
+                    <button type="submit" class="modal-submit-button">
+                        Отправить
+                    </button>
+            
             </form>
-        </div>
-    </div>
+            </div>
+            </div>
+            
+            <script src="./js/modal.js"></script>
+            
+            
+            
+            <script>
+                (() => {
+                    document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                        e.preventDefault();
 
-    <script src="./js/modal.js"></script>
-    
-
-
-    <script>
-        (() => {
-            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                e.preventDefault();
-
-                new FormData(e.currentTarget).forEach((value, name) =>
-                    console.log(`${name}: ${value}`),
-                );
-            });
-        })();
-    </script>
-</body>
-</html>
+                        new FormData(e.currentTarget).forEach((value, name) =>
+                            console.log(`${name}: ${value}`),
+                        );
+                    });
+                })();
+            </script>
+            </body>
+            
+            </html>
