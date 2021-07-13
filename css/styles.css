@@ -785,9 +785,9 @@ textarea::placeholder {
 }
 .checkbox:checked ~ .check-icon {
   /* background-image: url(../images/svg/icons.svg#icon-person-black); */
-  background-color: teal;
-  background-size: contain;
+  background-color: red;
   background-image: url(../images/svg/instagram.svg);
+  background-size: contain;
 }
 
 .conditions-link {
