@@ -784,12 +784,12 @@ textarea::placeholder {
   background-size: contain;
 }
 .checkbox:checked ~ .check-icon {
-  /* background-image: url(../images/svg/icons.svg#icon-person-black); */
   background-color: red;
-  background-image: url(../images/svg/instagram.svg);
+  background-image: url(../images/svg/icons.svg#icon-person-black); */
+  /* background-image: url(../images/svg/instagram.svg); */
   background-size: contain;
 }
-
+k
 .conditions-link {
   margin-left: 5px;
   color: var(--blue-accent);
@@ -810,4 +810,54 @@ textarea::placeholder {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px #00000026;
   cursor: pointer;
+}
+/* форма підписки */
+.footer-subscribe {
+  margin-left: 93px;
+}
+.subscribe {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.mail-label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  font-size: 16px;
+  line-height: 1.25;
+  /* color: rgba(255, 255, 255, 0.6); */
+  
+  transform: translateY(-50%);
+}
+.subscribe-form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 70px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.subscribe-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 6%;
+  color: var(--main-background-hero-adress-color);
+  background-color: var(--blue-accent);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.subscribe-button-image {
+  display: block;
+  fill: var(--main-background-hero-adress-color);
+  margin-left: 10px;
 }
