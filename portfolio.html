@@ -48,7 +48,7 @@
         <!--Кнопки фільтра-->
         <section class="section">
         <div class="container portfolio-container">
-        <h1 class="portfolio-title">Портфолио</h1>
+        <h1 class="visually-hidden">Портфолио</h1>
         <div>
         <ul class="gallery-nav">
             <li class="nav-button">
@@ -175,23 +175,26 @@
             </div>
         </section>
     </main>
-    <!--Адрес-->
+    <!--Футер-->
     <footer class="footer">
         <div class="container footer-container">
             <div class="contacts">
-            <a href="" class="logo footer-logo">
-                <span class="logo-part">Web</span><span class="logo-end">Studio</span>
-            </a>
-            <address>
-                <ul class="footer-contact">
-                    <li class="address"> <a href="https://goo.gl/maps/Wv8Y8Ao4LumDGfkv7" target="_blank"
-                            rel="noopener noreferrer" class="add-link link">г. Киев,
-                            пр-т Леси Украинки, 26</a> </li>
-                    <li class="email"> <a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li> <a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+                <a href="" class="logo footer-logo">
+                    <span class="logo-part">Web</span><span class="logo-end">Studio</span>
+                </a>
+                <address>
+                    <ul class="footer-contact">
+                        <li class="address"> <a href="https://goo.gl/maps/Wv8Y8Ao4LumDGfkv7" target="_blank"
+                                rel="noopener noreferrer" class="add-link link">г. Киев,
+                                пр-т Леси Украинки, 26</a> </li>
+                        <li class="email"> <a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                        <li> <a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
             </div>
+    
+            <!-- лінки на соцмережі -->
+    
             <div class="social-media">
                 <h2 class="footer-title">присоединяйтесь</h2>
                 <ul class="social-list">
@@ -225,6 +228,28 @@
                     </li>
                 </ul>
             </div>
+    
+            <!-- форма підписки на розсилку -->
+    
+            <div class="footer-subscribe">
+                <h2 class="footer-title">подпишитесь на рассылку</h2>
+                <form class="subscribe-form">
+                    <div class="subscribe">
+                        <label><span class="mail-label">E-mail</span>
+                            <input type="Email" class="subscribe-form-input" name="user-email">
+                        </label>
+                </form>
+                <button type="submit" class="subscribe-submit-button">
+                    Подписаться
+                    <span>
+                        <svg class="subscribe-button-image" width="24px" height="24px">
+                            <use href="./images/svg/icons.svg#icon-send"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+    
+        </div>
         </div>
     </footer>
 </body>
